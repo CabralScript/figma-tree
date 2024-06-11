@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* !\ Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* todo\ Estilo do Header */
+iframe{
+    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1275px;
+    height: 600px;
+}
+header{
+    height: 7rem;
+}
+header .navpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .navpage .navpage-name{
+    text-decoration: none;
+    font-size:32px ;
+    font-weight: 500;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+header .navpage .navpage-list{
+    list-style: none;
+    display: flex;
+    gap: 31px;
+    cursor: pointer;
+    
+}
+header .navpage .navpage-list .navpage-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    display:inline-block ;
+   margin-top: 10px;
+
+
+}
+header .navpage .navpage-list .navpage-menu a:hover{
+ transform: scale(1.1);
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px ;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+
+}
+
+/* ?\ Estilo do Main */
+
+main{
+    margin-top: 20px;
+    padding: 0;
+    
+    
+}
+main .secpage .h1page{
+    font-size: 2rem;
+    padding: 0 ;
+    
+}
+main .secpage .imgpage .imgpage-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px; 
+    line-height: 1.5;
+
+    }
+
+    /* ?\ main two */
+    main .secpagetwo{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        max-width: 1200px;
+      
+    }
+    main .secpagetwo .imgpear{
+       cursor: default;
+       text-decoration: none;
+       color: black;
+       line-height: 1.5;
+    }
+    main .secpagetwo .img-extras{
+        list-style: none;
+        padding: 50px;
+        line-height: 1.5;
+        
+    }
+    .h3img1{
+        margin-bottom: 30px;
+    }
+
+/* *\ Footer */
+footer{
+    padding: 0 2rem;
+}
+.icons .icons-btn{
+    padding: 0 2rem;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* !\ Responsividade */
+@media (min-width: 480px) and (max-width: 767px) {
+    .imgpage-img {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+  }
+  
+  /* Estilos para celular */
+  @media (max-width: 479px) {
+    .imgpage-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
